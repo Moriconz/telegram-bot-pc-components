@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Componenti PC Windows — Controllo Prezzi Europa</title>
+<meta name="description" content="Confronto prezzi reali componenti PC su Amazon Italia, Germania, Spagna, Francia, Olanda, Polonia.">
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<style>
+:root{
+  --bg:#0b0f17;--panel:#121826;--panel2:#1a2333;--line:#26304a;
+  --txt:#e6ebf5;--muted:#8a97b1;--accent:#5b8cff;--good:#2bd576;--warn:#ffb020;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.5;min-height:100vh}
+.wrap{max-width:1200px;margin:0 auto;padding:2rem 1.25rem 4rem}
+header h1{font-size:1.9rem;font-weight:700;letter-spacing:-.02em}
+header p{color:var(--muted);margin-top:.4rem;font-size:.95rem}
+.badge{display:inline-block;margin-left:.5rem;padding:.15rem .55rem;border-radius:999px;
+  background:var(--panel2);color:var(--muted);font-size:.72rem;border:1px solid var(--line)}
+.meta{color:var(--muted);font-size:.82rem;margin:1rem 0 1.6rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:1rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem}
+.card h2{font-size:1.05rem;font-weight:600;margin-bottom:.2rem}
+.cat{color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.9rem}
+.row{display:flex;align-items:center;justify-content:space-between;gap:.6rem;
+  padding:.5rem .7rem;border-radius:10px;margin-bottom:.5rem;background:var(--panel2);
+  text-decoration:none;color:var(--txt);border:1px solid transparent;transition:.15s}
+.row:hover{border-color:var(--accent)}
+.row .src{font-size:.85rem;color:var(--muted)}
+.row .pr{font-weight:700;font-size:1.05rem}
+.row.best{background:linear-gradient(90deg,rgba(43,213,118,.16),rgba(43,213,118,.04));
+  border-color:rgba(43,213,118,.4)}
+.row.best .pr{color:var(--good)}
+.tag{font-size:.62rem;font-weight:700;color:#06210f;background:var(--good);
+  padding:.1rem .4rem;border-radius:6px;margin-left:.4rem;vertical-align:middle}
+.na{color:var(--warn);font-size:.8rem;font-style:italic}
+.legend{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
+.chip{font-size:.72rem;padding:.2rem .55rem;border-radius:999px;background:var(--panel2);
+  border:1px solid var(--line);color:var(--muted)}
+.totals{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  padding:1.4rem 1.5rem;margin:1.8rem 0}
+.totals h2{font-size:1.15rem;font-weight:700;margin-bottom:1rem}
+.trow{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.55rem 0;border-bottom:1px solid var(--line)}
+.trow:last-child{border-bottom:none}
+.trow .tname{font-size:.92rem}
+.trow .trank{font-size:.72rem;color:var(--muted);margin-left:.4rem}
+.trow .tprice{font-weight:700;font-size:1.05rem}
+.trow.cheapest .tprice{color:var(--good)}
+.grand{margin-top:1rem;padding-top:1rem;border-top:1px dashed var(--line);
+  display:flex;justify-content:space-between;font-size:1.1rem;font-weight:700}
+.pbnote{color:var(--muted);font-size:.82rem;margin-bottom:1rem}
+.pname{font-size:.9rem;color:var(--accent);text-decoration:none}
+.pname:hover{text-decoration:underline}
+.chip{font-size:.66rem;padding:.1rem .45rem;border-radius:999px;background:var(--panel2);
+  border:1px solid var(--line);color:var(--muted);margin-left:.5rem;vertical-align:middle}
+.chip.warn{background:rgba(255,176,32,.15);color:var(--warn);border-color:rgba(255,176,32,.4)}
+.trow.under .tprice{color:var(--good)}
+.trow.over{opacity:.55}
+.pfoot{margin-top:1rem;padding-top:.8rem;border-top:1px dashed var(--line);
+  font-size:.88rem;color:var(--good)}
+.note{background:rgba(255,176,32,.08);border:1px solid rgba(255,176,32,.3);
+  border-radius:12px;padding:1rem 1.2rem;margin:1.5rem 0;font-size:.85rem;color:var(--muted)}
+.note b{color:var(--txt)}
+footer{margin-top:3rem;color:var(--muted);font-size:.78rem;text-align:center;border-top:1px solid var(--line);padding-top:1.4rem}
+.err{color:#ff6b6b}
+</style>
+</head>
+<body>
+<div id="app" class="wrap">
+  <header>
+    <h1>Componenti PC Windows <span class="badge">AMD ONLY</span></h1>
+    <p>Controllo prezzi reali su Amazon in tutta Europa. I link portano al prodotto vero.</p>
+  </header>
+
+  <p class="meta" v-if="meta">Ultimo controllo: <b>{{ meta }}</b></p>
+  <p class="meta err" v-if="error">{{ error }}</p>
+
+  <div class="legend" v-if="sources">
+    <span class="chip" v-for="s in sources" :key="s">{{ s }}</span>
+  </div>
+
+  <div class="note" v-if="taxNote">
+    <b>Tasse di importazione:</b> {{ taxNote }}
+  </div>
+
+  <div class="grid">
+    <div class="card" v-for="c in cards" :key="c.name">
+      <h2>{{ c.name }}</h2>
+      <div class="cat">{{ c.category }}</div>
+      <template v-if="c.rows.length">
+        <a class="row" v-for="r in c.rows" :key="r.src"
+           :class="{best:r.isBest}" :href="r.url" target="_blank" rel="noopener">
+          <span class="src">{{ r.src }}</span>
+          <span><span class="pr">€{{ fmt(r.price) }}</span><span v-if="r.isBest" class="tag">MIGLIORE</span></span>
+        </a>
+      </template>
+      <div class="na" v-else>Nessun prezzo disponibile al controllo odierno.</div>
+    </div>
+  </div>
+
+  <div class="totals" v-if="totals.length">
+    <h2>Totali per fascia di prezzo (miglior prezzo per componente)</h2>
+    <div class="trow" v-for="(t,i) in totals" :key="t.name" :class="{cheapest:i===0}">
+      <span class="tname">{{ t.name }}<span class="trank">#{{ i+1 }} {{ i===0 ? 'più economico' : (i===totals.length-1 ? 'più caro' : '') }}</span></span>
+      <span class="tprice">€{{ fmt(t.price) }}</span>
+    </div>
+    <div class="grand">
+      <span>TOTALE (PC completo, prezzi migliori)</span>
+      <span>€{{ fmt(grandTotal) }}</span>
+    </div>
+  </div>
+
+  <div class="totals" v-if="comboList.length">
+    <h2>📦 Combo / Bundle trovati (Amazon EU)</h2>
+    <p class="pbnote">Bundle reali trovati a runtime (non ASIN fissi). Applicati al totale solo se convengono vs i singoli.</p>
+    <div class="trow" v-for="c in comboList" :key="c.id">
+      <a class="pname" :href="c.url" target="_blank" rel="noopener">{{ c.id }} — {{ c.query }}
+        <span class="chip">risparmio €{{ fmt(c.save) }}</span></a>
+      <span class="tprice">€{{ fmt(c.price_eur) }}</span>
+    </div>
+  </div>
+
+  <div class="totals" v-if="prebuiltList.length">
+    <h2>🖥️ PC pre-assemblati equivalenti (64GB RAM, EU)</h2>
+    <p class="pbnote">Stesse caratteristiche o superiori rispetto al fai-da-te, solo se <b>sotto il totale</b> (€{{ fmt(grandTotalNoCombo) }} — totale componenti singoli, senza sconti bundle). Windows non incluso.</p>
+    <div class="trow" v-for="p in prebuiltList" :key="p.name"
+         :class="{under:p.price<=grandTotal, over:p.price>grandTotal}">
+      <a class="pname" :href="p.url" target="_blank" rel="noopener">{{ p.name }}
+        <span class="chip" v-if="p.better">⭐ specifiche superiori</span>
+        <span class="chip warn" v-if="p.price>grandTotal">sopra il totale</span>
+      </a>
+      <span class="tprice">€{{ fmt(p.price) }}</span>
+    </div>
+    <div class="pfoot" v-if="bestPrebuilt">
+      Migliore tra i pre-assemblati: <b>{{ bestPrebuilt.name }}</b> a €{{ fmt(bestPrebuilt.price) }}
+      — <span v-if="bestPrebuilt.price <= grandTotal">✅ conviene vs fai-da-te col combo (risparmio €{{ fmt(grandTotal - bestPrebuilt.price) }})</span>
+      <span v-else>€{{ fmt(bestPrebuilt.price - grandTotal) }} in più vs fai-da-te col combo (€{{ fmt(grandTotal) }})</span>;
+      vs fai-da-te senza combo (€{{ fmt(grandTotalNoCombo) }}): risparmio €{{ fmt(grandTotalNoCombo - bestPrebuilt.price) }}.
+    </div>
+  </div>
+
+  <footer>
+    Bot Telegram @ComponentiPCconIA_bot · prezzi aggiornati 2x/giorno · fonti: {{ sources.join(', ') }}
+  </footer>
+</div>
+
+<script>
+const { createApp } = Vue;
+createApp({
+  data(){ return {
+    data:null, error:null
+  } },
+  async mounted(){
+    try{
+      const r = await fetch('data.json', {cache:'no-store'});
+      if(!r.ok) throw new Error('data.json non trovato');
+      this.data = await r.json();
+    }catch(e){
+      this.error = 'Prezzi non ancora disponibili. Esegui lo scraper per popolare data.json.';
+    }
+  },
+  computed:{
+    meta(){ return this.data?.updated_at || '' },
+    sources(){ return this.data?.sources || [] },
+    taxNote(){
+      // Nota tasse: Amazon EU serve da warehouse locali, solitamente IVA inclusa.
+      // Acquisti tra paesi UE non hanno dazi doganali extra.
+      return "Tutti i prezzi sono quelli mostrati su Amazon (IVA locale inclusa). " +
+             "Per acquisti tra paesi UE non ci sono dazi doganali extra. " +
+             "Attenzione: alcuni venditori terzi (es. marketplace .nl/.pl) possono applicare " +
+             "spese di spedizione extra o IVA diversa — il prezzo 'migliore' va sempre verificato alla cassa.";
+    },
+    cards(){
+      if(!this.data) return [];
+      return Object.entries(this.data.components).map(([name,c])=>{
+        const rows = Object.entries(c.prices)
+          .map(([src, p])=>({src, price:p.price_eur, url:p.url, available:p.available}))
+          .filter(r=>r.price!=null && r.available!==false)
+          .sort((a,b)=>a.price-b.price);
+        const best = rows.length ? rows[0].price : null;
+        rows.forEach(r=> r.isBest = (r.price===best));
+        return { name, category:c.category, rows };
+      });
+    },
+    // Performance relativa (raster, 1440p/4K approx) usata per il rapporto frame/€.
+    // Valori indicativi: 100 = RX 7900 XTX di riferimento.
+    gpuPerf(){ return { "RTX 5080 16GB": 102, "RX 7900 XTX": 100 } },
+    // Performance relativa CPU (gaming). 100 = Ryzen 7 7800X3D (miglior value).
+    cpuPerf(){ return { "Ryzen 7 7800X3D": 100, "Ryzen 9 7950X3D": 112 } },
+    // Totale per componente = miglior prezzo; GPU e CPU raggruppate in UNA sola voce
+    // ciascuna (si sceglie la migliore per value, non solo la più economica).
+    totals(){
+      if(!this.data) return [];
+      const comps = Object.entries(this.data.components);
+      const out = [];
+      const gpuRows = [];
+      const cpuRows = [];
+      for(const [name, c] of comps){
+        const prices = Object.values(c.prices)
+          .filter(p => p.price_eur != null && p.available !== false)
+          .map(p=>p.price_eur);
+        if(!prices.length) continue;
+        // Licenza Windows gestita dall'utente: esclusa dal totale PC.
+        if(name.includes('Windows')) continue;
+        const best = Math.min(...prices);
+        const qty = c.qty || 1;
+        if(c.category === 'GPU'){
+          const perf = this.gpuPerf[name] || 100;
+          gpuRows.push({ name, price: best, perf, fpsPerEuro: perf / best });
+        } else if(c.category === 'CPU'){
+          const perf = this.cpuPerf[name] || 100;
+          cpuRows.push({ name, price: best, perf, value: perf / best });
+        } else {
+          out.push({ name, price: best * qty });
+        }
+      }
+      // GPU: miglior rapporto frame/€
+      if(gpuRows.length){
+        gpuRows.sort((a,b)=> b.fpsPerEuro - a.fpsPerEuro);
+        const win = gpuRows[0];
+        out.push({ name: win.name + " (scelta per frame/€)", price: win.price, isGpu:true });
+      }
+      // CPU: miglior rapporto prezzo/performance
+      if(cpuRows.length){
+        cpuRows.sort((a,b)=> b.value - a.value);
+        const win = cpuRows[0];
+        out.push({ name: win.name + " (scelta per value)", price: win.price, isCpu:true });
+      }
+      // --- Applica COMBO se convenienti (mirror di compute_totals in bot_notify.py) ---
+      const bestByName = {};
+      out.forEach(r => { bestByName[r.name] = r.price; });
+      const combos = (this.data && this.data.combos) ? this.data.combos : [];
+      const covered = new Set();
+      combos.forEach(combo => {
+        // Trova righe il cui nome inizia con un target (i nomi hanno suffissi)
+        const matched = [];
+        (combo.replaces || []).forEach(t => {
+          out.forEach(r => { if(r.name.startsWith(t) && !covered.has(r.name)) matched.push(r); });
+        });
+        if(matched.length < (combo.replaces || []).length) return;
+        const singleSum = matched.reduce((s,r)=> s + r.price, 0);
+        const comboPrice = combo.price_eur != null ? combo.price_eur : combo.price;
+        if(comboPrice == null) return;
+        if(comboPrice < singleSum - 0.01){
+          matched.forEach(r => {
+            const i = out.indexOf(r);
+            if(i >= 0) out.splice(i, 1);
+            covered.add(r.name);
+          });
+          const save = singleSum - comboPrice;
+          out.push({ name: "COMBO " + combo.id + " (risparmio €" + Math.round(save) + ")", price: Math.round(comboPrice*100)/100 });
+        }
+      });
+      return out.sort((a,b)=>a.price-b.price);
+    },
+    grandTotal(){
+      return this.totals.reduce((s,t)=>s+t.price, 0);
+    },
+    // Totale SENZA combo: serve come soglia per i pre-assemblati, perchè un
+    // pre-assemblato è un'alternativa al "comprali singoli", non al bundle scontato.
+    grandTotalNoCombo(){
+      // Ricalcola i totali senza applicare i combo (stessa logica di totals, ma
+      // saltando il blocco combo).
+      const comps = this.data ? Object.entries(this.data.components) : [];
+      const out = [];
+      const gpuRows = [];
+      const cpuRows = [];
+      for(const [name, c] of comps){
+        const prices = Object.values(c.prices)
+          .filter(p => p.price_eur != null && p.available !== false)
+          .map(p=>p.price_eur);
+        if(!prices.length) continue;
+        if(name.includes('Windows')) continue;
+        const best = Math.min(...prices);
+        const qty = c.qty || 1;
+        if(c.category === 'GPU'){
+          const perf = this.gpuPerf[name] || 100;
+          gpuRows.push({ name, price: best, perf, fpsPerEuro: perf / best });
+        } else if(c.category === 'CPU'){
+          const perf = this.cpuPerf[name] || 100;
+          cpuRows.push({ name, price: best, perf, value: perf / best });
+        } else {
+          out.push({ name, price: best * qty });
+        }
+      }
+      if(gpuRows.length){ gpuRows.sort((a,b)=> b.fpsPerEuro - a.fpsPerEuro); const w=gpuRows[0]; out.push({ name: w.name, price: w.price }); }
+      if(cpuRows.length){ cpuRows.sort((a,b)=> b.value - a.value); const w=cpuRows[0]; out.push({ name: w.name, price: w.price }); }
+      return out.reduce((s,t)=>s+t.price, 0);
+    },
+    // Combo/bundle: da data.json, con risparmio vs somma dei singoli migliori.
+    comboList(){
+      if(!this.data || !this.data.combos) return [];
+      return this.data.combos.map(c => {
+        const single = (c.replaces || []).reduce((s, t) => {
+          const row = this.data.components[t];
+          if(!row) return s;
+          const ps = Object.values(row.prices)
+            .filter(p => p.price_eur != null && p.available !== false)
+            .map(p=>p.price_eur);
+          return s + (ps.length ? Math.min(...ps) : 0);
+        }, 0);
+        const pe = c.price_eur != null ? c.price_eur : c.price;
+        return { id: c.id, query: c.query, url: c.url, price_eur: pe, save: Math.round(single - pe) };
+      });
+    },
+    // PC pre-assemblati: letti da data.json (aggiornati dallo scraper prebuilt).
+    // Mostra solo quelli vivi (non broken) e SOTTO il totale.
+    prebuiltList(){
+      if(!this.data || !this.data.prebuilt) return [];
+      const threshold = this.grandTotalNoCombo;
+      return this.data.prebuilt
+        .filter(p => !p.broken && p.price != null)
+        .filter(p => p.price <= threshold)
+        .sort((a,b)=>a.price-b.price);
+    },
+    bestPrebuilt(){
+      if(!this.prebuiltList.length) return null;
+      return this.prebuiltList[0];
+    }
+  },
+  methods:{ fmt(p){ return Number(p).toLocaleString('it-IT',{minimumFractionDigits:2,maximumFractionDigits:2}) } }
+}).mount('#app');
+</script>
+</body>
+</html>

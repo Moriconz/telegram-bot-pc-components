@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node
+node_modules/
+.next/
+
+# Databases (regenerati)
+*.db
+
+# Logs
+logs/
+*.log
+
+# Temp
+_hermes_*.py
+_hermes_*.sh

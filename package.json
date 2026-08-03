@@ -1,0 +1,16 @@
+{
+  "name": "componenti-pc-windows",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python main.py",
+    "build": "python -c 'from app.main import app; app.run()'",
+    "start": "python main.py"
+  },
+  "dependencies": {
+    "flask": "3.0.0",
+    "requests": "2.31.0",
+    "beautifulsoup4": "4.12.0",
+    "lxml": "4.9.0"
+  }
+}

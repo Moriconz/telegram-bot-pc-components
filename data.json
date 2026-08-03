@@ -1,0 +1,675 @@
+{
+  "updated_at": "2026-08-03 16:47:52",
+  "sources": [
+    "Amazon.it",
+    "Amazon.de",
+    "Amazon.es",
+    "Amazon.fr",
+    "Amazon.nl",
+    "Amazon.pl"
+  ],
+  "components": {
+    "Ryzen 7 7800X3D": {
+      "category": "CPU",
+      "prices": {
+        "Amazon.it": {
+          "price": 351.75,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B0BTZB7F88",
+          "available": true,
+          "price_eur": 351.75
+        },
+        "Amazon.de": {
+          "price": 315,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B0BTZB7F88",
+          "available": true,
+          "price_eur": 315
+        },
+        "Amazon.es": {
+          "price": 347.95,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B0BTZB7F88",
+          "available": true,
+          "price_eur": 347.95
+        },
+        "Amazon.fr": {
+          "price": 329.49,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B0BTZB7F88",
+          "available": true,
+          "price_eur": 329.49
+        },
+        "Amazon.nl": {
+          "price": 324.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B0BTZB7F88",
+          "available": true,
+          "price_eur": 324.9
+        },
+        "Amazon.pl": {
+          "price": 1300,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B0BTZB7F88",
+          "available": true,
+          "price_eur": 302.9
+        }
+      }
+    },
+    "Ryzen 9 7950X3D": {
+      "category": "CPU",
+      "prices": {
+        "Amazon.it": {
+          "price": 861.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B0BTRH9MNS",
+          "available": true,
+          "price_eur": 861.9
+        },
+        "Amazon.de": {
+          "price": 699.69,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B0BTRH9MNS",
+          "available": true,
+          "price_eur": 699.69
+        },
+        "Amazon.es": {
+          "price": 781,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B0BTRH9MNS",
+          "available": true,
+          "price_eur": 781
+        },
+        "Amazon.fr": {
+          "price": 999.99,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B0BTRH9MNS",
+          "available": true,
+          "price_eur": 999.99
+        },
+        "Amazon.nl": {
+          "price": 725.96,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B0BTRH9MNS",
+          "available": true,
+          "price_eur": 725.96
+        },
+        "Amazon.pl": {
+          "price": 4209.75,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B0BTRH9MNS",
+          "available": true,
+          "price_eur": 980.87
+        }
+      }
+    },
+    "RTX 5080 16GB": {
+      "category": "GPU",
+      "prices": {
+        "Amazon.it": {
+          "price": 1399.99,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B0BSLJK16Z",
+          "available": true,
+          "price_eur": 1399.99
+        },
+        "Amazon.de": {
+          "price": 1399.99,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B0BSLJK16Z",
+          "available": true,
+          "price_eur": 1399.99
+        },
+        "Amazon.es": {
+          "price": 1369.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B0BSLJK16Z",
+          "available": true,
+          "price_eur": 1369.9
+        },
+        "Amazon.fr": {
+          "price": 1399.99,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B0BSLJK16Z",
+          "available": true,
+          "price_eur": 1399.99
+        },
+        "Amazon.nl": {
+          "price": 319.99,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B0BSLJK16Z",
+          "available": false,
+          "price_eur": null,
+          "outlier": true
+        },
+        "Amazon.pl": {
+          "price": 4299,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B0BSLJK16Z",
+          "available": true,
+          "price_eur": 1001.67
+        }
+      }
+    },
+    "RX 7900 XTX": {
+      "category": "GPU",
+      "prices": {
+        "Amazon.it": {
+          "price": 439,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B0BNLSW23M",
+          "available": true,
+          "price_eur": 439
+        },
+        "Amazon.de": {
+          "price": 39.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B0BNLSW23M",
+          "available": true,
+          "price_eur": null,
+          "outlier": true
+        },
+        "Amazon.es": {
+          "price": 327.99,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B0BNLSW23M",
+          "available": false,
+          "price_eur": 327.99
+        },
+        "Amazon.fr": {
+          "price": 862,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B0BNLSW23M",
+          "available": false,
+          "price_eur": null,
+          "outlier": true
+        },
+        "Amazon.nl": {
+          "price": 319.99,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B0BNLSW23M",
+          "available": false,
+          "price_eur": 319.99
+        },
+        "Amazon.pl": {
+          "price": 265.82,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B0BNLSW23M",
+          "available": true,
+          "price_eur": null,
+          "outlier": true
+        }
+      }
+    },
+    "DDR5 64GB 6000MHz": {
+      "category": "RAM",
+      "prices": {
+        "Amazon.it": {
+          "price": 831.62,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B0DSQVNBD5",
+          "available": true,
+          "price_eur": 831.62
+        },
+        "Amazon.de": {
+          "price": 811.94,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B0DSQVNBD5",
+          "available": true,
+          "price_eur": 811.94
+        },
+        "Amazon.es": {
+          "price": 862.26,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B0DSQVNBD5",
+          "available": true,
+          "price_eur": 862.26
+        },
+        "Amazon.fr": {
+          "price": 859.11,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B0DSQVNBD5",
+          "available": true,
+          "price_eur": 859.11
+        },
+        "Amazon.nl": {
+          "price": 828.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B0DSQVNBD5",
+          "available": true,
+          "price_eur": 828.9
+        },
+        "Amazon.pl": {
+          "price": 150.9,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B0DSQVNBD5",
+          "available": true,
+          "price_eur": null,
+          "outlier": true
+        }
+      }
+    },
+    "SSD 990 PRO 2TB": {
+      "category": "SSD",
+      "prices": {
+        "Amazon.it": {
+          "price": 389.99,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B0B9C4DKKG",
+          "available": true,
+          "price_eur": 389.99
+        },
+        "Amazon.de": {
+          "price": 327.25,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B0B9C4DKKG",
+          "available": true,
+          "price_eur": 327.25
+        },
+        "Amazon.es": {
+          "price": 126,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B0B9C4DKKG",
+          "available": true,
+          "price_eur": null,
+          "outlier": true
+        },
+        "Amazon.fr": {
+          "price": 339,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B0B9C4DKKG",
+          "available": true,
+          "price_eur": 339
+        },
+        "Amazon.nl": {
+          "price": 339,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B0B9C4DKKG",
+          "available": true,
+          "price_eur": 339
+        },
+        "Amazon.pl": {
+          "price": 529.99,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B0B9C4DKKG",
+          "available": true,
+          "price_eur": null,
+          "outlier": true
+        }
+      }
+    },
+    "ASUS Z790-A WiFi II": {
+      "category": "MB",
+      "prices": {
+        "Amazon.it": {
+          "price": 770.16,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B0CJMR6652",
+          "available": true,
+          "price_eur": 770.16
+        },
+        "Amazon.de": {
+          "price": 1129.33,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B0CJMR6652",
+          "available": true,
+          "price_eur": 1129.33
+        },
+        "Amazon.es": {
+          "price": 754.28,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B0CJMR6652",
+          "available": true,
+          "price_eur": 754.28
+        },
+        "Amazon.fr": {
+          "price": 747,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B0CJMR6652",
+          "available": true,
+          "price_eur": 747
+        },
+        "Amazon.nl": {
+          "price": null,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B0CJMR6652",
+          "available": false,
+          "price_eur": null
+        },
+        "Amazon.pl": {
+          "price": null,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B0CJMR6652",
+          "available": false,
+          "price_eur": null
+        }
+      }
+    },
+    "Corsair RM1000x": {
+      "category": "PSU",
+      "prices": {
+        "Amazon.it": {
+          "price": 188.85,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B0BPSWXKSB",
+          "available": true,
+          "price_eur": 188.85
+        },
+        "Amazon.de": {
+          "price": 187.92,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B0BPSWXKSB",
+          "available": true,
+          "price_eur": 187.92
+        },
+        "Amazon.es": {
+          "price": 195,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B0BPSWXKSB",
+          "available": true,
+          "price_eur": 195
+        },
+        "Amazon.fr": {
+          "price": 184.99,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B0BPSWXKSB",
+          "available": true,
+          "price_eur": 184.99
+        },
+        "Amazon.nl": {
+          "price": 184.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B0BPSWXKSB",
+          "available": true,
+          "price_eur": 184.9
+        },
+        "Amazon.pl": {
+          "price": 858.87,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B0BPSWXKSB",
+          "available": true,
+          "price_eur": 200.12
+        }
+      }
+    },
+    "Fractal Meshify 2": {
+      "category": "Case",
+      "prices": {
+        "Amazon.it": {
+          "price": 163.36,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B0822ZD9NP",
+          "available": true,
+          "price_eur": 163.36
+        },
+        "Amazon.de": {
+          "price": 15,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B0822ZD9NP",
+          "available": true,
+          "price_eur": null,
+          "outlier": true
+        },
+        "Amazon.es": {
+          "price": 183.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B0822ZD9NP",
+          "available": true,
+          "price_eur": 183.9
+        },
+        "Amazon.fr": {
+          "price": 163.36,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B0822ZD9NP",
+          "available": true,
+          "price_eur": 163.36
+        },
+        "Amazon.nl": {
+          "price": 154.1,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B0822ZD9NP",
+          "available": true,
+          "price_eur": 154.1
+        },
+        "Amazon.pl": {
+          "price": 748.8,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B0822ZD9NP",
+          "available": true,
+          "price_eur": 174.47
+        }
+      }
+    },
+    "Noctua NH-D15": {
+      "category": "Cooler",
+      "prices": {
+        "Amazon.it": {
+          "price": 107,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B00L7UZMAK",
+          "available": true,
+          "price_eur": 107
+        },
+        "Amazon.de": {
+          "price": 109.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B00L7UZMAK",
+          "available": true,
+          "price_eur": 109.9
+        },
+        "Amazon.es": {
+          "price": 109.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B00L7UZMAK",
+          "available": true,
+          "price_eur": 109.9
+        },
+        "Amazon.fr": {
+          "price": 110,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B00L7UZMAK",
+          "available": true,
+          "price_eur": 110
+        },
+        "Amazon.nl": {
+          "price": 99.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B00L7UZMAK",
+          "available": true,
+          "price_eur": 99.9
+        },
+        "Amazon.pl": {
+          "price": 433.77,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B00L7UZMAK",
+          "available": true,
+          "price_eur": 101.07
+        }
+      }
+    },
+    "Noctua NF-A12x25 (x3)": {
+      "category": "Fans",
+      "prices": {
+        "Amazon.it": {
+          "price": 54.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B07C5VG64V",
+          "available": true,
+          "price_eur": 54.9
+        },
+        "Amazon.de": {
+          "price": 29.54,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B07C5VG64V",
+          "available": true,
+          "price_eur": 29.54
+        },
+        "Amazon.es": {
+          "price": 32.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B07C5VG64V",
+          "available": true,
+          "price_eur": 32.9
+        },
+        "Amazon.fr": {
+          "price": 34.98,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B07C5VG64V",
+          "available": true,
+          "price_eur": 34.98
+        },
+        "Amazon.nl": {
+          "price": 29.9,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B07C5VG64V",
+          "available": true,
+          "price_eur": 29.9
+        },
+        "Amazon.pl": {
+          "price": 119.94,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B07C5VG64V",
+          "available": true,
+          "price_eur": 27.95
+        }
+      }
+    },
+    "Windows 11 Pro (key)": {
+      "category": "OS",
+      "prices": {
+        "Amazon.it": {
+          "price": 237,
+          "currency": "EUR",
+          "url": "https://www.amazon.it/dp/B09X11M88J",
+          "available": true,
+          "price_eur": 237
+        },
+        "Amazon.de": {
+          "price": 302.39,
+          "currency": "EUR",
+          "url": "https://www.amazon.de/dp/B09X11M88J",
+          "available": true,
+          "price_eur": 302.39
+        },
+        "Amazon.es": {
+          "price": 275.91,
+          "currency": "EUR",
+          "url": "https://www.amazon.es/dp/B09X11M88J",
+          "available": true,
+          "price_eur": 275.91
+        },
+        "Amazon.fr": {
+          "price": 329.98,
+          "currency": "EUR",
+          "url": "https://www.amazon.fr/dp/B09X11M88J",
+          "available": true,
+          "price_eur": 329.98
+        },
+        "Amazon.nl": {
+          "price": 53.99,
+          "currency": "EUR",
+          "url": "https://www.amazon.nl/dp/B09X11M88J",
+          "available": true,
+          "price_eur": null,
+          "outlier": true
+        },
+        "Amazon.pl": {
+          "price": 91,
+          "currency": "PLN",
+          "url": "https://www.amazon.pl/dp/B09X11M88J",
+          "available": true,
+          "price_eur": null,
+          "outlier": true
+        }
+      }
+    }
+  },
+  "combos": [
+    {
+      "id": "CPU+MB",
+      "query": "7800X3D Mainboard Bundle",
+      "replaces": [
+        "Ryzen 7 7800X3D",
+        "ASUS Z790-A WiFi II"
+      ],
+      "price": 699,
+      "currency": "EUR",
+      "url": "https://www.amazon.de/dp/B0DM5KMS3L",
+      "asin": "B0DM5KMS3L",
+      "price_eur": 699
+    },
+    {
+      "id": "CPU+MB+RAM",
+      "query": "7800X3D Mainboard 64GB DDR5 Bundle",
+      "replaces": [
+        "Ryzen 7 7800X3D",
+        "ASUS Z790-A WiFi II",
+        "DDR5 64GB 6000MHz"
+      ],
+      "price": 759,
+      "currency": "EUR",
+      "url": "https://www.amazon.de/dp/B0DM5LFV5G",
+      "asin": "B0DM5LFV5G",
+      "price_eur": 759
+    }
+  ],
+  "prebuilt": [
+    {
+      "name": "VIST PRO \u2014 R7 7800X3D + RTX 5080 + 64GB (DE)",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/206078581_-pro-pc-ryzen-7-7800x3d-rtx-5080-64gb-1tb-vi2401-vist-pc.html",
+      "better": false,
+      "price": 3089.9,
+      "alive": false,
+      "broken": true
+    },
+    {
+      "name": "Dubaro \u2014 R7 7800X3D + RTX 5080 + 64GB (DE)",
+      "url": "https://www.dubaro.de/Gaming-PC-Ryzen-7-7800X3D-mit-RTX5080-102157/",
+      "better": false,
+      "price": 2949.0,
+      "alive": true,
+      "broken": false
+    },
+    {
+      "name": "memorypc \u2014 R7 7800X3D + RTX 5080 + 64GB (DE)",
+      "url": "https://www.memorypc.eu/high-end-gaming-pc/geforce-rtx-566076/",
+      "better": false,
+      "price": 2839.0,
+      "alive": true,
+      "broken": false
+    },
+    {
+      "name": "memorypc.fr \u2014 R7 7800X3D + RTX 5080 + 64GB (FR)",
+      "url": "https://www.memorypc.fr/pc-gamer-high-end/nvidia-geforce-552908/",
+      "better": false,
+      "price": 2899.0,
+      "alive": true,
+      "broken": false
+    },
+    {
+      "name": "LDLC \u2014 PC RTX 5080 + R7 7800X3D + 64GB (FR)",
+      "url": "https://www.ldlc.com/informatique/ordinateur-de-bureau/pc-de-marque/c4250/+fb-C000000888+fv121-126519.html",
+      "better": false,
+      "price": 3379.0,
+      "alive": true,
+      "broken": false
+    },
+    {
+      "name": "PC Specialist \u2014 RTX 5080 + R7 7800X3D + 64GB (UK)",
+      "url": "https://www.pcspecialist.co.uk/desktop-pcs/nvidia-rtx-50-series/",
+      "better": false,
+      "price": 3799.0,
+      "alive": true,
+      "broken": false
+    },
+    {
+      "name": "Dubaro \u2014 R9 7950X3D + RTX 5080 + 64GB (DE)",
+      "url": "https://www.dubaro.de/Gaming-PC-Ryzen-7-7800X3D-mit-RTX5080-102157/",
+      "better": true,
+      "price": 3450.0,
+      "alive": true,
+      "broken": false
+    }
+  ],
+  "prebuilt_updated_at": "2026-08-03 16:47:56"
+}
