@@ -1,0 +1,650 @@
+[
+  {
+    "asin": "B0BTZB7F88",
+    "tld": "it",
+    "title": "Processore AMD Ryzen 7 7800X3D con 3D V Cache technology (scheda grafica integrata Radeon, 8 cores/16 threads, 120W TDP,",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "351,75\u20ac",
+    "component": "Ryzen 7 7800X3D"
+  },
+  {
+    "asin": "B0BTZB7F88",
+    "tld": "de",
+    "title": "AMD Ryzen 7 7800X3D Prozessor with 3D V Cache technology (intergrierte Radeon Grafik, 8 Kerne/16 Threads, 120W TDP, AM5 ",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "",
+    "component": "Ryzen 7 7800X3D"
+  },
+  {
+    "asin": "B0BTZB7F88",
+    "tld": "es",
+    "title": "AMD Ryzen 7 7800X3D Procesador con tecnolog\u00eda 3D V-Cache (tarjeta gr\u00e1fica Radeon integrada, 8 n\u00facleos/16 threads,120W TD",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "347,95\u20ac",
+    "component": "Ryzen 7 7800X3D"
+  },
+  {
+    "asin": "B0BTZB7F88",
+    "tld": "fr",
+    "title": "AMD Ryzen 7 7800X3D Processeur avec La Technologie 3D V-Cache (Radeon Graphique Int\u00e9gr\u00e9, 8 C\u0153urs/16 Threads, 120W TDP, S",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "329,49\u20ac",
+    "component": "Ryzen 7 7800X3D"
+  },
+  {
+    "asin": "B0BTZB7F88",
+    "tld": "nl",
+    "title": "AMD Ryzen 7 7800X3D Processor met 3D V-Cache Technologie (Radeon ge\u00efntegreerde grafische kaart, 8 Cores/16 Threads , 120",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "\u20ac324,90",
+    "component": "Ryzen 7 7800X3D"
+  },
+  {
+    "asin": "B0BTZB7F88",
+    "tld": "pl",
+    "title": "Amd Ryzen 7 7800X3D Procesor, 8 rdzeni, 16 w\u0105tk\u00f3w",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "1\u00a0300,00z\u0142",
+    "component": "Ryzen 7 7800X3D"
+  },
+  {
+    "asin": "B0BTRH9MNS",
+    "tld": "it",
+    "title": "Processore AMD Ryzen 9 7950X3D con 3D V-Cache technology (scheda grafica integrata, 16 cores/32 threads, 120W TDP, AM5 s",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "861,90\u20ac",
+    "component": "Ryzen 9 7950X3D"
+  },
+  {
+    "asin": "B0BTRH9MNS",
+    "tld": "de",
+    "title": "AMD Ryzen 9 7950X3D Prozessor with 3D V-Cache technology (intergrierte graphics, 16 Kerne/32 Threads, 120W TDP, AM5 Sock",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "699,69\u20ac",
+    "component": "Ryzen 9 7950X3D"
+  },
+  {
+    "asin": "B0BTRH9MNS",
+    "tld": "es",
+    "title": "AMD Ryzen 9 7950X3D Procesador con tecnolog\u00eda 3D V-Cache (tarjeta gr\u00e1fica Radeon integrada, 16 n\u00facleos/32 threads, 120W ",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "781,00\u20ac",
+    "component": "Ryzen 9 7950X3D"
+  },
+  {
+    "asin": "B0BTRH9MNS",
+    "tld": "fr",
+    "title": "AMD Ryzen 9 7950X3D Processeur avec La Technologie 3D V-Cache (Radeon Graphique Int\u00e9gr\u00e9, 16 C\u0153urs/32 Threads, 120W TDP, ",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "999,99\u20ac",
+    "component": "Ryzen 9 7950X3D"
+  },
+  {
+    "asin": "B0BTRH9MNS",
+    "tld": "nl",
+    "title": "AMD Ryzen 9 7950X3D Processor met 3D V-Cache Technologie (Radeon ge\u00efntegreerde grafische kaart, 16 Cores/32 Threads, 120",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "\u20ac725,96",
+    "component": "Ryzen 9 7950X3D"
+  },
+  {
+    "asin": "B0BTRH9MNS",
+    "tld": "pl",
+    "title": "Procesor AMD Ryzen 9 7950X3D with 3D V-pami\u0119ci podr\u0119cznej technology (integrated graphics, 16 rdzeni/32 w\u0105tk\u00f3w, 120W TDP",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "4\u00a0209,75z\u0142",
+    "component": "Ryzen 9 7950X3D"
+  },
+  {
+    "asin": "B0BSLJK16Z",
+    "tld": "it",
+    "title": "msi NVIDIA GeForce RTX 5080 16G INSPIRE 3X OC GDDR7 256bit, scheda video con frequenza di boost fino a 2655 MHz, PCIe Ge",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "1.399,99\u20ac",
+    "component": "RTX 5080 16GB"
+  },
+  {
+    "asin": "B0BSLJK16Z",
+    "tld": "de",
+    "title": "MSI GeForce RTX 5080 16G Inspire 3X OC \u2014 16GB GDDR7 (30Gbps/256-bit), PCIe 5, Boost: 2640 MHz, HDMI 2.1b, DisplayPort 2.",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "1.399,99\u20ac",
+    "component": "RTX 5080 16GB"
+  },
+  {
+    "asin": "B0BSLJK16Z",
+    "tld": "es",
+    "title": "MSI GeForce RTX 5080 16G Inspire 3X OC Tarjeta gr\u00e1fica, RTX 5080, 16GB GDDR7 (30Gbps/256-bit), PCIe 5.0 - Dise\u00f1o t\u00e9rmico",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "1.369,90\u20ac",
+    "component": "RTX 5080 16GB"
+  },
+  {
+    "asin": "B0BSLJK16Z",
+    "tld": "fr",
+    "title": "MSI NVIDIA GeForce RTX 5080 16G Inspire 3X OC Carte Graphique 16 Go GDDR7 (30 Gb/s/256 Bits), Refroidissement \u00e0 Triple V",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "1\u202f399,99\u20ac",
+    "component": "RTX 5080 16GB"
+  },
+  {
+    "asin": "B0BSLJK16Z",
+    "tld": "nl",
+    "title": "GeForce RTX 5080 16G INSPIRE 3X OC",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "\u20ac\u00a0319,99",
+    "component": "RTX 5080 16GB"
+  },
+  {
+    "asin": "B0BSLJK16Z",
+    "tld": "pl",
+    "title": "GeForce RTX 5080 16G INSPIRE 3X OC",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "",
+    "component": "RTX 5080 16GB"
+  },
+  {
+    "asin": "B0BNLSW23M",
+    "tld": "it",
+    "title": "XFX - Speedster MERC310 AMD Radeon\u2122 RX 7900XTX, Black Gaming, Scheda grafica, 24 GB, GDDR6, AMD RDNA\u2122 3 (RX-79XMERCB9)",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "",
+    "component": "RX 7900 XTX"
+  },
+  {
+    "asin": "B0BNLSW23M",
+    "tld": "de",
+    "title": "XFX Speedster MERC310 AMD Radeon\u2122 RX 7900XTX Black Gaming Grafikkarte 24 GB GDDR6, AMD RDNA\u2122 3 (RX-79XMERCB9)",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "",
+    "component": "RX 7900 XTX"
+  },
+  {
+    "asin": "B0BNLSW23M",
+    "tld": "es",
+    "title": "XFX Speedster MERC310 AMD Radeon\u2122 RX 7900XTX Black Gaming Tarjeta gr\u00e1fica 24GB GDDR6, AMD RDNA\u2122 3 (RX-79XMERCB9)",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "",
+    "component": "RX 7900 XTX"
+  },
+  {
+    "asin": "B0BNLSW23M",
+    "tld": "fr",
+    "title": "XFX Speedster MERC310 AMD Radeon\u2122 RX 7900XTX Black Gaming Carte Graphique 24GB GDDR6, AMD RDNA\u2122 3 (RX-79XMERCB9)",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "",
+    "component": "RX 7900 XTX"
+  },
+  {
+    "asin": "B0BNLSW23M",
+    "tld": "nl",
+    "title": "XFX Speedster MERC310 AMD Radeon\u2122 RX 7900XTX Black Gaming grafische kaart 24 GB GDDR6, AMD RDNA\u2122 3 (RX-79XMERCB9)",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "",
+    "component": "RX 7900 XTX"
+  },
+  {
+    "asin": "B0BNLSW23M",
+    "tld": "pl",
+    "title": "Xfx Speedster Merc310 Amd Radeon RX-79XMERCB9 Karta Graficzna, Czarny, 24GB",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "",
+    "component": "RX 7900 XTX"
+  },
+  {
+    "asin": "B0DSQVNBD5",
+    "tld": "it",
+    "title": "Crucial Pro RAM DDR5 64GB Kit (2x32GB) 6000MHz CL40, Overclocking Gaming, Intel XMP 3.0 / AMD EXPO, Memoria PC, Nero - C",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "839,26\u20ac",
+    "component": "DDR5 64GB 6000MHz"
+  },
+  {
+    "asin": "B0DSQVNBD5",
+    "tld": "de",
+    "title": "Crucial Pro DDR5 RAM 64GB Kit (2x32GB) 6000MHz CL40, Overclocking Gaming, Intel XMP 3.0 / AMD Expo, PC Computer Arbeitss",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "811,94\u20ac",
+    "component": "DDR5 64GB 6000MHz"
+  },
+  {
+    "asin": "B0DSQVNBD5",
+    "tld": "es",
+    "title": "Crucial Pro RAM DDR5 64GB (2x32GB) 6000MHz CL40, Overclocking Gaming, Intel XMP 3.0 / AMD Expo, PC Memoria, Negro - CP2K",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "862,26\u20ac",
+    "component": "DDR5 64GB 6000MHz"
+  },
+  {
+    "asin": "B0DSQVNBD5",
+    "tld": "fr",
+    "title": "Crucial Pro RAM DDR5 64Go Kit (2x32Go) 6000MHz CL40, Overclocking Gaming, Intel XMP 3.0 / AMD EXPO, PC M\u00e9moire, Noir - C",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "859,11\u20ac",
+    "component": "DDR5 64GB 6000MHz"
+  },
+  {
+    "asin": "B0DSQVNBD5",
+    "tld": "nl",
+    "title": "Crucial Pro RAM DDR5 64GB Kit (2x32GB) 6000MHz CL40, Gaminggeheugen Overklokken, Intel XMP 3.0 / AMD EXPO, Desktopgeheug",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "\u20ac828,90",
+    "component": "DDR5 64GB 6000MHz"
+  },
+  {
+    "asin": "B0DSQVNBD5",
+    "tld": "pl",
+    "title": "Crucial Pro RAM DDR5 64 GB Kit (2x32GB) 6000MHz CL40, pami\u0119\u0107 do gier, podkr\u0119canie, Intel XMP 3.0 / AMD EXPO, pami\u0119\u0107 stac",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "",
+    "component": "DDR5 64GB 6000MHz"
+  },
+  {
+    "asin": "B0B9C4DKKG",
+    "tld": "it",
+    "title": "SAMSUNG Memorie 990 PRO M.2 2000 GB PCI Express 4.0 V-NAND MLC NVMe",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "389,99\u20ac",
+    "component": "SSD 990 PRO 2TB"
+  },
+  {
+    "asin": "B0B9C4DKKG",
+    "tld": "de",
+    "title": "Samsung 990 PRO NVMe M.2 SSD, 2 TB, PCIe 4.0, 7.450 MB/s Lesen, 6.900 MB/s Schreiben, Interne SSD, Interne SSD f\u00fcr Gamin",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "327,25\u20ac",
+    "component": "SSD 990 PRO 2TB"
+  },
+  {
+    "asin": "B0B9C4DKKG",
+    "tld": "es",
+    "title": "SAMSUNG SSD Memoria Interno 990 Pro 2TB NVME",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "",
+    "component": "SSD 990 PRO 2TB"
+  },
+  {
+    "asin": "B0B9C4DKKG",
+    "tld": "fr",
+    "title": "Samsung SSD 990 Pro NVMe M.2 Pcle 4.0, SSD Interne, Capacit\u00e9 2 To, Vitesse de lecture jusqu'\u00e0 7 450 Mo/s, Gestion Intell",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "339,00\u20ac",
+    "component": "SSD 990 PRO 2TB"
+  },
+  {
+    "asin": "B0B9C4DKKG",
+    "tld": "nl",
+    "title": "Samsung SSD 990 PRO, 2TB, PCIe 4.0 NVMe\u2122 M.2 SSD, MZ-V9P2T0BW",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "\u20ac339,00",
+    "component": "SSD 990 PRO 2TB"
+  },
+  {
+    "asin": "B0B9C4DKKG",
+    "tld": "pl",
+    "title": "Samsung 990 Pro MZ-V9P2T0BW Dysk Ssd M.2, Czarny, 2 TB",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "",
+    "component": "SSD 990 PRO 2TB"
+  },
+  {
+    "asin": "B0CJMR6652",
+    "tld": "it",
+    "title": "ASUS ROG Strix Z790-A Gaming WiFi II (WiFi 7) LGA 1700(Intel 14a e 13a e 12a generazione) Scheda madre da gioco ATX (DDR",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "770,16\u20ac",
+    "component": "ASUS Z790-A WiFi II"
+  },
+  {
+    "asin": "B0CJMR6652",
+    "tld": "de",
+    "title": "ASUS ROG Strix Z790-A Gaming WiFi II - LGA1700",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "1.129,33\u20ac",
+    "component": "ASUS Z790-A WiFi II"
+  },
+  {
+    "asin": "B0CJMR6652",
+    "tld": "es",
+    "title": "Asus ROG STRIX Z790-A GAMING WIFI II - LGA1700",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "754,28\u20ac",
+    "component": "ASUS Z790-A WiFi II"
+  },
+  {
+    "asin": "B0CJMR6652",
+    "tld": "fr",
+    "title": "Asus ROG STRIX Z790-A GAMING WIFI II - LGA1700, Intel Core 13e/12e Gen, DDR5, PCIe 5.0, USB 20/10/5 Gbit/s, HDMI 2.1, AT",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "747,00\u20ac",
+    "component": "ASUS Z790-A WiFi II"
+  },
+  {
+    "asin": "B0CJMR6652",
+    "tld": "nl",
+    "title": "Asus ROG STRIX Z790-A GAMING WIFI II - LGA1700",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "",
+    "component": "ASUS Z790-A WiFi II"
+  },
+  {
+    "asin": "B0CJMR6652",
+    "tld": "pl",
+    "title": "Asus ROG STRIX Z790-A GAMING WIFI II - LGA1700",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "",
+    "component": "ASUS Z790-A WiFi II"
+  },
+  {
+    "asin": "B0BPSWXKSB",
+    "tld": "it",
+    "title": "Corsair RM1000x SHIFT Alimentatore ATX Interamente Modulare - Interfaccia Laterale - Compatibilit\u00e0 con ATX 3.1 e PCIe 5.",
+    "notFound": true,
+    "matchesExpected": true,
+    "price": "188,85\u20ac",
+    "component": "Corsair RM1000x"
+  },
+  {
+    "asin": "B0BPSWXKSB",
+    "tld": "de",
+    "title": "Corsair RM1000x Shift, Vollmodulares ATX-Netzteil, Modulare Seitenschnittstelle, ATX 3.1 & PCIe 5.1-kompatibel, Null-Dre",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "187,92\u20ac",
+    "component": "Corsair RM1000x"
+  },
+  {
+    "asin": "B0BPSWXKSB",
+    "tld": "es",
+    "title": "Corsair RM1000x Shift Fuente de Alimentaci\u00f3n Totalmente Modular \u2013 Compatible con ATX 3.1 y PCIe 5.1 \u2013 Modo Ventilador Ce",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "195,00\u20ac",
+    "component": "Corsair RM1000x"
+  },
+  {
+    "asin": "B0BPSWXKSB",
+    "tld": "fr",
+    "title": "Corsair RM1000x SHIFT Alimentation ATX Enti\u00e8rement Modulaire - Interface Lat\u00e9rale Modulaire - Compliant ATX 3.1 & PCIe 5",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "184,99\u20ac",
+    "component": "Corsair RM1000x"
+  },
+  {
+    "asin": "B0BPSWXKSB",
+    "tld": "nl",
+    "title": "Corsair RM1000x SHIFT Volledig Modulaire ATX-Voeding - Interface Modulaire Zijde - Conform aan ATX 3.1 en PCIe 5.1 - Zer",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "\u20ac184,90",
+    "component": "Corsair RM1000x"
+  },
+  {
+    "asin": "B0BPSWXKSB",
+    "tld": "pl",
+    "title": "Corsair RM1000x SHIFT W pe\u0142ni modu\u0142owy zasilacz ATX - Modu\u0142owy interfejs boczny - kompliant ATX 3.1 & PCIe 5.1 - kondens",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "858,87z\u0142",
+    "component": "Corsair RM1000x"
+  },
+  {
+    "asin": "B0822ZD9NP",
+    "tld": "it",
+    "title": "Fractal Design Meshify 2 Black ATX Flexible Light Tinted Tempered Glass Window Mid Tower Computer Case",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "163,36\u20ac",
+    "component": "Fractal Meshify 2"
+  },
+  {
+    "asin": "B0822ZD9NP",
+    "tld": "de",
+    "title": "Fractal Design Meshify 2 Black ATX Flexible Light Tinted Tempered Glass Window Mid Tower Computer Case",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "",
+    "component": "Fractal Meshify 2"
+  },
+  {
+    "asin": "B0822ZD9NP",
+    "tld": "es",
+    "title": "Fractal Design Meshify 2 Negro Torre Media ATX Cristal Templado Panel Tintado dise\u00f1o Flexible para PC",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "183,90\u20ac",
+    "component": "Fractal Meshify 2"
+  },
+  {
+    "asin": "B0822ZD9NP",
+    "tld": "fr",
+    "title": "Fractal Design Meshify 2 Black ATX Flexible Light Tinted Tempered Glass Window Mid Tower Computer Case",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "163,36\u20ac",
+    "component": "Fractal Meshify 2"
+  },
+  {
+    "asin": "B0822ZD9NP",
+    "tld": "nl",
+    "title": "Fractal Design FRACTAL DESIGN Meshify 2 zwart TG Light Tint, FD-C-MES2A-03,zwart",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "\u20ac154,10",
+    "component": "Fractal Meshify 2"
+  },
+  {
+    "asin": "B0822ZD9NP",
+    "tld": "pl",
+    "title": "Fractal Design Meshify 2 FD-C-MES2A-03 Obudowa Komputerowa, Czarny/P\u00f3\u0142przezroczysty, 54.2 x 24 x 47.4 cm",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "748,80z\u0142",
+    "component": "Fractal Meshify 2"
+  },
+  {
+    "asin": "B00L7UZMAK",
+    "tld": "it",
+    "title": "Noctua NH-D15, Dissipatore di Calore a Doppia Torre di Qualit\u00e0 Premium per CPU (Marrone)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "107,00\u20ac",
+    "component": "Noctua NH-D15"
+  },
+  {
+    "asin": "B00L7UZMAK",
+    "tld": "de",
+    "title": "Noctua NH-D15, Premium CPU K\u00fchler mit 2x NF-A15 PWM 140mm L\u00fcftern (Braun)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "109,90\u20ac",
+    "component": "Noctua NH-D15"
+  },
+  {
+    "asin": "B00L7UZMAK",
+    "tld": "es",
+    "title": "Noctua NH-D15, Disipador de CPU de 140 mm y Doble Torre y M\u00e1xima Calidad (Marr\u00f3n)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "109,90\u20ac",
+    "component": "Noctua NH-D15"
+  },
+  {
+    "asin": "B00L7UZMAK",
+    "tld": "fr",
+    "title": "Noctua NH-D15, Refroidisseur Haut de Gamme avec 2x NF-A15 PWM Ventilateur (Marron)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "110,00\u20ac",
+    "component": "Noctua NH-D15"
+  },
+  {
+    "asin": "B00L7UZMAK",
+    "tld": "nl",
+    "title": "Noctua NH-D15, Premium Processorkoeler met 2x NF-A15 PWM 140mm Ventilatoren (Bruin)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "\u20ac99,90",
+    "component": "Noctua NH-D15"
+  },
+  {
+    "asin": "B00L7UZMAK",
+    "tld": "pl",
+    "title": "Noctua NH-D15 - Najwy\u017cszej Klasy Ch\u0142odnica CPU z Dwoma Wentylatorami A15 PWM 140 mm (Br\u0105zowy)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "433,77z\u0142",
+    "component": "Noctua NH-D15"
+  },
+  {
+    "asin": "B07C5VG64V",
+    "tld": "it",
+    "title": "Noctua NF-A12x25 PWM, Ventola Silenziosa di Qualit\u00e0 Premium, 4-Pin (120 mm, Marrone)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "",
+    "component": "Noctua NF-A12x25 (x3)"
+  },
+  {
+    "asin": "B07C5VG64V",
+    "tld": "de",
+    "title": "Noctua NF-A12x25 PWM, Leiser Premium-L\u00fcfter, 4-Pin (120mm, Braun)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "29,54\u20ac",
+    "component": "Noctua NF-A12x25 (x3)"
+  },
+  {
+    "asin": "B07C5VG64V",
+    "tld": "es",
+    "title": "Noctua NF-A12x25 PWM, Ventilador Silencioso, 4 Pines (120 mm, Marr\u00f3n)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "32,90\u20ac",
+    "component": "Noctua NF-A12x25 (x3)"
+  },
+  {
+    "asin": "B07C5VG64V",
+    "tld": "fr",
+    "title": "Noctua NF-A12x25 PWM, Ventilateur Silencieux Haut de Gamme, 4 Broches (120mm, Marron)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "34,98\u20ac",
+    "component": "Noctua NF-A12x25 (x3)"
+  },
+  {
+    "asin": "B07C5VG64V",
+    "tld": "nl",
+    "title": "Noctua NF-A12x25 PWM, Hoogwaardige Stille Ventilator, 4-Pins (120mm, Bruin)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "\u20ac29,90",
+    "component": "Noctua NF-A12x25 (x3)"
+  },
+  {
+    "asin": "B07C5VG64V",
+    "tld": "pl",
+    "title": "Noctua NF-A12x25 PWM, Cichy, 4-Pinowy Wentylator Klasy Premium (120 mm, Br\u0105zowy)",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "119,94z\u0142",
+    "component": "Noctua NF-A12x25 (x3)"
+  },
+  {
+    "asin": "B09X11M88J",
+    "tld": "it",
+    "title": "MICROSOFT WINDOWS 11 PRO (INGLES) FPP 64-BIT ENG INTL USB FLASH DRIVE",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "237,00\u20ac",
+    "component": "Windows 11 Pro (key)"
+  },
+  {
+    "asin": "B09X11M88J",
+    "tld": "de",
+    "title": "SW RET Win 11 PRO FPP 64B/ENG USB HAV-00163 MS",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "302,39\u20ac",
+    "component": "Windows 11 Pro (key)"
+  },
+  {
+    "asin": "B09X11M88J",
+    "tld": "es",
+    "title": "Microsoft Windows 11 Pro (Ingles) FPP 64-bit Eng INTL USB Flash Drive",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "275,91\u20ac",
+    "component": "Windows 11 Pro (key)"
+  },
+  {
+    "asin": "B09X11M88J",
+    "tld": "fr",
+    "title": "SW Ret Win 11 Pro FPP 64B/ENG USB HAV-00163 MS",
+    "notFound": false,
+    "matchesExpected": false,
+    "price": "329,98\u20ac",
+    "component": "Windows 11 Pro (key)"
+  },
+  {
+    "asin": "B09X11M88J",
+    "tld": "nl",
+    "title": "MICROSOFT WINDOWS 11 PRO (INGLES) FPP 64-bits ENG INTL USB Flash Drive",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "",
+    "component": "Windows 11 Pro (key)"
+  },
+  {
+    "asin": "B09X11M88J",
+    "tld": "pl",
+    "title": "MICROSOFT WINDOWS 11 PRO (INGLES) FPP 64-BIT ENG INTL USB FLASH DRIVE",
+    "notFound": false,
+    "matchesExpected": true,
+    "price": "",
+    "component": "Windows 11 Pro (key)"
+  }
+]

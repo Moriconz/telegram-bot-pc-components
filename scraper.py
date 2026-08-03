@@ -62,8 +62,9 @@ async def scrape_price(page, asin, tld, label):
     try:
         await page.goto(url, timeout=30000)
         await page.wait_for_timeout(2500)
-        # Prendi il prezzo dal blocco "Acquista nuovo" (buybox), non il primo sparso.
-        # Cerca prima il prezzo del buybox, poi il prezzo generico piu' visibile.
+        # Regola severa: il prezzo e' valido SOLO se c'e' un buybox reale
+        # ("Acquista nuovo") E il prodotto e' disponibile. Se la pagina non ha
+        # un listing acquistabile, NON ritorniamo alcun prezzo (niente "MIGLIORE" falso).
         price = await page.evaluate('''() => {
             const parse = (t) => {
                 if (!t) return null;
@@ -76,27 +77,20 @@ async def scrape_price(page, asin, tld, label):
                 const v = parseFloat(normalized);
                 return isNaN(v) ? null : v;
             };
-            // Stato disponibilita' reale: controllato su TUTTI i TLD EU (IT/DE/ES/FR/NL/PL).
-            // Regex multilingua: copre ogni frase "non disponibile/out of stock" per ogni lingua Amazon EU.
+            // Stato disponibilita' reale: controllato su TUTTI i TLD EU.
             const availEl = document.querySelector('#availability, #availabilityInsideBuyBox, #availabilityInsideBuybox_feature_div, #availability_feature_div, #outOfStock, #deliveryMessageMirId');
             const availTxt = (availEl ? availEl.innerText : '') + ' '
                            + (document.querySelector('#buybox')?.innerText || '').slice(0, 600) + ' '
                            + document.body.innerText.slice(0, 3000);
             const UNAVAIL = /non disponibile|attualmente non disponibile|non piu disponibile|esaurito|non in stock|indisponible|rupture de stock|epuise|est plus disponible|niet beschikbaar|niet verkrijgbaar|er niet meer|tijdelijk uitverkocht|nicht verfugbar|momentan nicht|nicht lieferbar|ausverkauft|no disponible|agotado|sin stock|temporalmente agotado|niedostepny|brak w magazynie|wyprzedany|chwilowo niedostepny|currently unavailable|out of stock|temporarily out of stock|we don'?t know when/i;
             const unavailable = UNAVAIL.test(availTxt);
-            // 1) prezzo buybox / "acquista nuovo"
+            // SOLO il prezzo del buybox reale ("Acquista nuovo").
             const buy = document.querySelector('#newBuyBoxPrice, #price_inside_buybox, .a-price.a-text-price span.a-offscreen, #buybox .a-price span.a-offscreen');
             const b = buy ? parse(buy.textContent) : null;
+            // Se c'e' buybox con prezzo E disponibile -> valido.
             if (b && !unavailable) return { price: b, available: true };
-            // 2) primo prezzo visibile nella pagina (solo se disponibile)
-            const els = document.querySelectorAll('[class*="a-price"] span[class*="a-price-whole"]');
-            for (const el of els) {
-                const v = parse(el.textContent);
-                if (v && v > 1 && !unavailable) return { price: v, available: true };
-            }
-            // Articolo non disponibile: ritorna prezzo (se presente) ma available=False
-            const anyPrice = b || (els[0] ? parse(els[0].textContent) : null);
-            return { price: anyPrice, available: false };
+            // Altrimenti: nessun prezzo valido (non leggiamo prezzi fuori-buybox).
+            return { price: null, available: false };
         }''')
         if not isinstance(price, dict):
             return {"price": price, "currency": TLD_CURRENCY[tld], "url": url,
