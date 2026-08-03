@@ -54,6 +54,7 @@ header p{color:var(--muted);margin-top:.4rem;font-size:.95rem}
 .pbnote{color:var(--muted);font-size:.82rem;margin-bottom:1rem}
 .pname{font-size:.9rem;color:var(--accent);text-decoration:none}
 .pname:hover{text-decoration:underline}
+.sub{display:block;font-size:.72rem;color:var(--muted);font-style:italic;margin-top:.15rem;max-width:42ch;line-height:1.2}
 .chip{font-size:.66rem;padding:.1rem .45rem;border-radius:999px;background:var(--panel2);
   border:1px solid var(--line);color:var(--muted);margin-left:.5rem;vertical-align:middle}
 .chip.warn{background:rgba(255,176,32,.15);color:var(--warn);border-color:rgba(255,176,32,.4)}
@@ -115,10 +116,11 @@ footer{margin-top:3rem;color:var(--muted);font-size:.78rem;text-align:center;bor
 
   <div class="totals" v-if="comboList.length">
     <h2>📦 Combo / Bundle trovati (Amazon EU)</h2>
-    <p class="pbnote">Bundle reali trovati a runtime (non ASIN fissi). Applicati al totale solo se convengono vs i singoli.</p>
+    <p class="pbnote">Bundle reali verificati per contenuto (CPU+MB / CPU+MB+RAM). Applicati al totale solo se convengono vs i singoli.</p>
     <div class="trow" v-for="c in comboList" :key="c.id">
-      <a class="pname" :href="c.url" target="_blank" rel="noopener">{{ c.id }} — {{ c.query }}
-        <span class="chip">risparmio €{{ fmt(c.save) }}</span></a>
+      <a class="pname" :href="c.url" target="_blank" rel="noopener">{{ c.id }}
+        <span class="chip">risparmio €{{ fmt(c.save) }}</span>
+        <span class="sub">{{ c.title }}</span></a>
       <span class="tprice">€{{ fmt(c.price_eur) }}</span>
     </div>
   </div>

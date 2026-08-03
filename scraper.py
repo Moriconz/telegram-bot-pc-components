@@ -241,19 +241,20 @@ async def main():
         await page.set_extra_http_headers({"Accept-Language": LANG_HEADERS[combo_tld]})
         for c in COMBOS:
             try:
-                r = await scrape_combo(page, c["query"], combo_tld, combo_label)
+                r = await scrape_combo(page, c["query"], combo_tld, combo_label, c.get("require_ram_64", False))
                 if r and r.get("price") is not None:
                     entry = {"id": c["id"], "query": c["query"],
                              "replaces": c["replaces"], "price": r["price"],
-                             "currency": r["currency"], "url": r["url"], "asin": r.get("asin")}
+                             "currency": r["currency"], "url": r["url"], "asin": r.get("asin"),
+                             "title": r.get("title", ""), "has": r.get("has", {})}
                     if r.get("currency") == "PLN":
                         entry["price_eur"] = round(r["price"] * PLN_TO_EUR, 2)
                     else:
                         entry["price_eur"] = r["price"]
                     combos_out.append(entry)
-                    print(f">>> COMBO {c['id']}: €{entry['price_eur']} @ {r.get('asin')}", flush=True)
+                    print(f">>> COMBO {c['id']}: €{entry['price_eur']} @ {r.get('asin')} | {r.get('title','')[:80]}", flush=True)
                 else:
-                    print(f">>> COMBO {c['id']}: nessun risultato", flush=True)
+                    print(f">>> COMBO {c['id']}: nessun risultato valido (titolo non combaciante)", flush=True)
             except Exception as e:
                 print(f">>> COMBO {c['id']} errore: {str(e)[:100]}", flush=True)
         await browser.close()
