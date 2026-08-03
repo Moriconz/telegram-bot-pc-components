@@ -1,52 +1,68 @@
 // pages/api/dashboard/snapshots.js
-// Storico snapshot Telegram — fallback a data.json se history.db non disponibile
-import { execFile } from 'child_process';
-import { promisify } from 'util';
+// Reads from data.json as fallback (no DB on Vercel)
 import fs from 'fs';
+import path from 'path';
 
-const execFileAsync = promisify(execFile);
-const BASE = '/Users/riccardomoricone/telegram-bot-pc-components';
+const BASE = process.cwd();
 
 export default async function handler(req, res) {
   const { component, limit = 50 } = req.query;
   const limitNum = parseInt(limit) || 50;
 
-  // Try history.db via Python (local only)
-  const PYTHON_SCRIPT = `
-import sqlite3, json, os
-base = "${BASE}"
-db = os.path.join(base, "history.db")
-if not os.path.exists(db):
-    print(json.dumps({"components": [], "snapshots": []}))
-    exit(0)
-conn = sqlite3.connect(db)
-conn.row_factory = sqlite3.Row
-comp = "${component}" if "${component}" != "undefined" else None
-if comp:
-    rows = conn.execute(
-        "SELECT ts, component, best_price, best_source FROM snapshots WHERE component = ? ORDER BY ts DESC LIMIT ?",
-        (comp, ${limitNum})
-    ).fetchall()
-else:
-    rows = conn.execute(
-        "SELECT ts, component, best_price, best_source FROM snapshots ORDER BY ts DESC LIMIT ?",
-        (${limitNum},)
-    ).fetchall()
-comps = conn.execute("SELECT DISTINCT component FROM snapshots ORDER BY component").fetchall()
-conn.close()
-result = {
-    "components": [r["component"] for r in comps],
-    "snapshots": [dict(r) for r in rows]
-}
-print(json.dumps(result))
-`;
+  const p = path.join(BASE, 'data.json');
+  if (!fs.existsSync(p)) {
+    return res.status(200).json({ components: [], snapshots: [] });
+  }
 
   try {
-    const { stdout } = await execFileAsync('python3', ['-c', PYTHON_SCRIPT], { timeout: 10000 });
-    const result = JSON.parse(stdout.trim());
-    res.status(200).json(result);
+    const data = JSON.parse(fs.readFileSync(p, 'utf8'));
+    const components = data.components || {};
+
+    // Build pseudo-snapshots from data.json
+    const componentList = Object.keys(components);
+    const snapshots = [];
+
+    if (component && component !== 'undefined') {
+      const comp = components[component];
+      if (comp) {
+        const prices = Object.entries(comp.prices || {});
+        prices.forEach(([src, v]) => {
+          if (v.price_eur != null) {
+            snapshots.push({
+              ts: data.updated_at || new Date().toISOString(),
+              component: component,
+              best_price: v.price_eur,
+              best_source: src,
+            });
+          }
+        });
+      }
+    } else {
+      // All components, their best price
+      for (const [name, comp] of Object.entries(components)) {
+        const prices = Object.entries(comp.prices || {});
+        let best = null;
+        for (const [src, v] of prices) {
+          if (v.price_eur != null && (best === null || v.price_eur < best.price)) {
+            best = { price: v.price_eur, source: src };
+          }
+        }
+        if (best) {
+          snapshots.push({
+            ts: data.updated_at || new Date().toISOString(),
+            component: name,
+            best_price: best.price,
+            best_source: best.source,
+          });
+        }
+      }
+    }
+
+    res.status(200).json({
+      components: componentList,
+      snapshots: snapshots.slice(0, limitNum),
+    });
   } catch (e) {
-    // Fallback: return empty
     res.status(200).json({ components: [], snapshots: [], error: e.message });
   }
 }
