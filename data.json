@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03 16:47:52",
+  "updated_at": "2026-08-03 16:58:18",
   "sources": [
     "Amazon.it",
     "Amazon.de",
@@ -135,12 +135,11 @@
           "price_eur": 1399.99
         },
         "Amazon.nl": {
-          "price": 319.99,
-          "currency": "EUR",
+          "price": null,
           "url": "https://www.amazon.nl/dp/B0BSLJK16Z",
           "available": false,
-          "price_eur": null,
-          "outlier": true
+          "error": "unknown",
+          "price_eur": null
         },
         "Amazon.pl": {
           "price": 4299,
@@ -185,11 +184,11 @@
           "outlier": true
         },
         "Amazon.nl": {
-          "price": 319.99,
-          "currency": "EUR",
+          "price": null,
           "url": "https://www.amazon.nl/dp/B0BNLSW23M",
           "available": false,
-          "price_eur": 319.99
+          "error": "unknown",
+          "price_eur": null
         },
         "Amazon.pl": {
           "price": 265.82,
@@ -205,11 +204,11 @@
       "category": "RAM",
       "prices": {
         "Amazon.it": {
-          "price": 831.62,
+          "price": 843.03,
           "currency": "EUR",
           "url": "https://www.amazon.it/dp/B0DSQVNBD5",
           "available": true,
-          "price_eur": 831.62
+          "price_eur": 843.03
         },
         "Amazon.de": {
           "price": 811.94,
@@ -331,16 +330,16 @@
         },
         "Amazon.nl": {
           "price": null,
-          "currency": "EUR",
           "url": "https://www.amazon.nl/dp/B0CJMR6652",
           "available": false,
+          "error": "unknown",
           "price_eur": null
         },
         "Amazon.pl": {
           "price": null,
-          "currency": "PLN",
           "url": "https://www.amazon.pl/dp/B0CJMR6652",
           "available": false,
+          "error": "unknown",
           "price_eur": null
         }
       }
@@ -491,11 +490,12 @@
       "category": "Fans",
       "prices": {
         "Amazon.it": {
-          "price": 54.9,
+          "price": 10.93,
           "currency": "EUR",
           "url": "https://www.amazon.it/dp/B07C5VG64V",
           "available": true,
-          "price_eur": 54.9
+          "price_eur": null,
+          "outlier": true
         },
         "Amazon.de": {
           "price": 29.54,
@@ -592,25 +592,17 @@
         "Ryzen 7 7800X3D",
         "ASUS Z790-A WiFi II"
       ],
-      "price": 699,
+      "price": 589,
       "currency": "EUR",
-      "url": "https://www.amazon.de/dp/B0DM5KMS3L",
-      "asin": "B0DM5KMS3L",
-      "price_eur": 699
-    },
-    {
-      "id": "CPU+MB+RAM",
-      "query": "7800X3D Mainboard 64GB DDR5 Bundle",
-      "replaces": [
-        "Ryzen 7 7800X3D",
-        "ASUS Z790-A WiFi II",
-        "DDR5 64GB 6000MHz"
-      ],
-      "price": 759,
-      "currency": "EUR",
-      "url": "https://www.amazon.de/dp/B0DM5LFV5G",
-      "asin": "B0DM5LFV5G",
-      "price_eur": 759
+      "url": "https://www.amazon.de/dp/B0DM5JHPSJ",
+      "asin": "B0DM5JHPSJ",
+      "title": "Aufr\u00fcst-Kit Bundle Ryzen 7 7800X3D Prozessor, MSI PRO B650-S WiFi Mainboard, be Quiet! Dark Rock 5 (zusammengebaut inkl. Bios Update + Funktionskontrolle)",
+      "has": {
+        "cpu": true,
+        "ram64": false,
+        "mb": true
+      },
+      "price_eur": 589
     }
   ],
   "prebuilt": [

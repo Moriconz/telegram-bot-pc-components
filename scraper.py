@@ -166,7 +166,7 @@ async def scrape_combo(page, query, tld, label, require_ram_64=False):
 # Usate solo se prezzo_bundle < somma dei singoli migliori prezzi.
 # require_ram_64: il bundle deve dichiarare esplicitamente 64GB nel titolo.
 COMBOS = [
-    {"id": "CPU+MB", "query": "7800X3D Mainboard Bundle", "replaces": ["Ryzen 7 7800X3D", "ASUS Z790-A WiFi II"],
+    {"id": "CPU+MB", "query": "7800X3D Mainboard Bundle", "replaces": ["Ryzen 7 7800X3D", "MSI PRO B650-S WiFi"],
      "require_ram_64": False},
     {"id": "CPU+MB+RAM", "query": "7800X3D 64GB DDR5 Mainboard Bundle", "replaces": ["Ryzen 7 7800X3D", "ASUS Z790-A WiFi II", "DDR5 64GB 6000MHz"],
      "require_ram_64": True},
